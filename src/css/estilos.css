@@ -1,0 +1,248 @@
+body{
+    font-family: 'ssf4';
+    background: var(--cor-secundaria);
+   margin-top: -25px;
+}
+
+body::before{
+    content: '';
+    background-image: url("../imagens/fundo-digimon.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;    
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cabecalho{
+    z-index: 1;
+    display: flex;    
+    justify-content: center;
+   margin-bottom: -30px;
+   
+}
+
+.cabecalho .titulo{
+    color: var(--cor-titulo-fraco);
+    text-transform: uppercase;
+    font-size: 52px;
+    line-height: 102px;
+   
+    color: #bdd604;
+    background: #333333;
+    text-shadow: rgb(30, 2, 2) 0px 0px 5px, rgb(128, 128, 128) 0px 0px 10px, rgb(91, 86, 86) 0px 0px 15px, #2d34ff 0px 0px 20px, #0f1bc5 0px 0px 30px,
+     #1c05c8 0px 0px 40px, #1575a9 0px 0px 50px, #3432ac 0px 0px 75px;
+}
+
+.warapper{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.digitacao{
+    width: 24ch;
+    animation: typing 5s steps(60), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-size: 2em;
+
+}
+
+@keyframes typing{
+    from{width: 0;}
+}
+
+@keyframes blink{
+    from{border-color: transparent;}
+}
+.selecao-de-personagens{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selecao-de-personagens .personagem-grande{
+    text-align: center;
+    width: 30%;
+    height: 70vh;
+    position: relative;
+}
+
+.selecao-de-personagens .personagem-grande img{
+    position: absolute;
+    width: 500px;
+    margin-left: -20px;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+
+.selecao-de-personagens .personagem-grande .nome::before{
+    content: '';
+    height: 40px;
+    width: 90%;
+    position: absolute;
+    bottom: -15px;
+    left: 0;    
+}
+
+.selecao-de-personagens .personagem-grande .nome .brilho1{
+    width: 5ch;
+    animation: typing 1s steps(60), blink .1s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-size: 2em;
+
+
+    color: var(--cor-padrao);
+    font-family: 'ssf4';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 40px;
+    color: #ffffff;
+    text-shadow: rgb(30, 2, 2) 0px 0px 5px, rgb(128, 128, 128) 0px 0px 10px, rgb(91, 86, 86) 0px 0px 15px, #2d34ff 0px 0px 20px, #0f1bc5 0px 0px 30px,
+     #1c05c8 0px 0px 40px, #1575a9 0px 0px 50px, #3432ac 0px 0px 75px;
+}
+
+
+.selecao-de-personagens .personagem-grande .nome .brilho2{
+    width: 5ch;
+    animation: typing 1s steps(60), blink .1s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-size: 2em;
+
+    color: var(--cor-padrao);
+    font-family: 'ssf4';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 40px;
+    color: #ffffff;
+    text-shadow: rgb(30, 2, 2) 0px 0px 5px, rgb(128, 128, 128) 0px 0px 10px, rgb(91, 86, 86) 0px 0px 15px, #bfc81a 0px 0px 20px, #d5e80e 0px 0px 30px,
+     #c1c805 0px 0px 40px, #c1de09 0px 0px 50px, #c79d12 0px 0px 75px;
+}
+h4{
+    color: white;
+    text-align: center;
+    border-bottom: 10px;   
+    animation: animate 1.5s linear infinite;
+  } 
+   
+  @keyframes animate{
+    0%{
+      opacity: 0;
+    }
+    50%{
+      opacity: 0.7;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+.selecao-de-personagens .personagem-grande.personagem-jogador-1 .nome::before{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+
+    -webkit-box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 12px 11px 26px 14px rgba(18,48,255,0); 
+    box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 12px 11px 26px 14px rgba(18,48,255,0);
+    opacity: 0.5;
+}
+
+.selecao-de-personagens .personagem-grande.personagem-jogador-2 .nome::before{
+    background: rgb(190, 206, 9);
+background: linear-gradient(90deg, rgb(206, 164, 11) 0%, rgb(207, 77, 11) 35%, rgb(251, 255, 0) 100%);
+
+-webkit-box-shadow: 5px 5px 0px 0px #edd628, 10px 10px 0px 0px #fff201c8, 15px 15px 0px 0px #eeeee4ac, 20px 20px 0px 0px #fcffed71, 25px 25px 0px 0px #ded7bd5e, 12px 11px 26px 14px rgba(238, 234, 218, 0); 
+box-shadow: 5px 5px 0px 0px #e0ed28, 10px 10px 0px 0px #fcec0add, 15px 15px 0px 0px #e3e3c88d, 20px 20px 0px 0px #f1f2dc78, 25px 25px 0px 0px #dbd6bf62, 12px 11px 26px 14px rgba(234, 230, 216, 0);
+
+
+}
+
+.selecao-de-personagens .lista-de-personagens{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    justify-content: center;
+    gap: 12px;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem{
+    border: 2px solid var(--cor-padrao);
+    background-color: var(--cor-padrao);
+    width: 24%;
+    height: 200px;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 5px;
+    position: relative;
+    transition: 0.15s ease-in-out;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem.selecionado{
+    border: 2px solid var(--cor-azul-media);
+    animation: c-glowing-blue .3s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem:hover{
+    animation: c-glowing-blue .3s ease-in-out infinite;
+    animation-direction: alternate;
+    transform: scale(1.07);
+    z-index: 2;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem.jogador-2-selecionado {
+    border: 2px solid var(--cor-vermelha-fraca);
+    animation: c-glowing-red .3s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem.jogador-2-selecionado:hover{    
+    animation: c-glowing-red .3s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem .tag{
+    display: none;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: var(--cor-azul-media);
+    transition: opacity .3 ease-in-out;
+    animation: text-glowing-blue .3s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem.selecionado .tag{
+    display: block;
+    animation: text-glowing-blue .3s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem.jogador-2-selecionado .tag{
+    display: block;
+    animation: text-glowing-red .3s ease-in-out infinite;
+    animation-direction: alternate;
+}
