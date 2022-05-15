@@ -1,6 +1,6 @@
 @media (max-width: 1280px){
     .cabecalho .titulo{
-        font-size: 40px;
+        font-size: 51px;
     }
 
     .selecao-de-personagens .lista-de-personagens{
@@ -28,11 +28,60 @@
     }
 
     .cabecalho .titulo{
-        font-size: 22px;
+        font-size: 32px;
     }
 
     .selecao-de-personagens .personagem-grande{
         display: none;
+    }
+
+    .cabecalho{
+        z-index: 1;
+        display: flex;    
+        justify-content: center;
+       margin-bottom: -30px;
+       
+    }
+    
+    .cabecalho .titulo{
+       
+        text-transform: uppercase;
+        font-size: 52px;
+        line-height: 102px;
+        text-align: center;
+        color: #bdd604;
+        background: transparent;
+        text-shadow: rgb(30, 2, 2) 0px 0px 5px, rgb(128, 128, 128) 0px 0px 10px, rgb(91, 86, 86) 0px 0px 15px, #2d34ff 0px 0px 20px, #0f1bc5 0px 0px 30px,
+         #1c05c8 0px 0px 40px, #1575a9 0px 0px 50px, #3432ac 0px 0px 75px;
+    }
+    
+    .warapper{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        
+    }
+
+  
+    
+    .digitacao{
+        
+        width: 24ch;
+        animation: typing 5s steps(60), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        font-size: 2em;
+    
+    }
+    
+    @keyframes typing{
+        from{width: 0;}
+    }
+    
+    @keyframes blink{
+        from{border-color: transparent;}
     }
 }
 
