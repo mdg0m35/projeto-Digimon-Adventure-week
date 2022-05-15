@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Escolha seu personagem - MapaDev Week</title>
     <link rel="stylesheet" href="./src/css/variaveis.css" />
     <link rel="stylesheet" href="./src/css/reset.css" />
@@ -11,6 +12,26 @@
     <link rel="stylesheet" href="./src/css/animacoes.css" />
     <link rel="stylesheet" href="./src/css/estilos.css">       
     <link rel="stylesheet" href="./src/css/responsivo.css">
+
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="./src/imagens/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./src/imagens/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./src/imagens/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./src/imagens/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./src/imagens/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./src/imagens/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./src/imagens/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./src/imagens/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/imagens/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./src/imagens/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/imagens/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./src/imagens/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/imagens/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./src/imagens/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./src/imagens/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+   
 </head>
 <body>
     <main>
@@ -24,66 +45,69 @@
         </div>          
         </header>
         <div class="selecao-de-personagens">
-            <div class="personagem-grande personagem-jogador-1">
-                <img src="./src/imagens/Taybrasao.png" alt="Personagem selecionado jogador 1" id="personagem-jogador-1" style="margin-left: 50px;">
+           <div class="personagem-grande personagem-jogador-1 selecionado">
+             
+            <img src="./src/imagens/Tai-Graymom-.png" alt="Personagem selecionado jogador 1" id="personagem-jogador-1Brasao" style="height: 395px; width: 345px;position: static; margin-left: 150px; margin-top: 150px">  
                 <img src="./src/imagens/Tai-Graymom.png" alt="Personagem selecionado jogador 1" id="personagem-jogador-1">
-               
+                <audio id="audio" src="./src/audio/click.wav"></audio>
+          
                 <div class="nome">
-                    <h2 class="brilho1">Graymon</h2>
+                    <h2 class="brilho1" id="nome-jogador-1">Graymon</h2>
                 </div>
-            </div>
-
+            
+        </div>
             <ul class="lista-de-personagens">
-                <li class="personagem selecionado" id="tai" data-name="tai">
+                <li class="personagem selecionado" id="Tai-Graymom" data-name="tai">
                     <span class="tag">1P</span>
-                    <img src="./src/imagens/Tai1.webp" alt="Personagem Thor">
+                    <img src="./src/imagens/Tai-Graymom.jpg" alt="Personagem Thor">
                 </li>
 
-                <li class="personagem" id="mete" data-name="Mete">
+                <li class="personagem" id="MeteGarurumon" data-name="Garurumon">
                     <span class="tag">1P</span>
-                    <img src="./src/imagens/Mete1.jpg" alt="Personagem Mete">
+                    <img src="./src/imagens/MeteGarurumon.jpg" alt="Personagem Mete">
                 </li>
 
-                <li class="personagem"id="mimi" data-name="Mimi">
+                <li class="personagem"id="mimi-togemon" data-name="togemon">
                     <span class="tag">1P</span>
-                    <img src="./src/imagens/mimi1.jpg" alt="Personagem Mimi">
+                    <img src="./src/imagens/mimi-togemon.jpg" alt="Personagem Mimi">
                 </li>
 
-                <li class="personagem" id="karen" data-name="Karen">
+                <li class="personagem" id="Karen-angelwoman" data-name="Angelwoman">
                     <span class="tag">1P</span>
-                    <img src="./src/imagens/karen1.jfif" alt="Personagem Keren">
+                    <img src="./src/imagens/Karen-angelwoman.jpg" alt="Personagem Keren">
                 </li>
 
                 <li class="personagem" id="logo" data-name="logo" >
                     <span class="tag">1P</span>
                     <img src="./src/imagens/fundo-digimon.gif" alt="logo">
+                    <audio id="audioLogo" src="./src/audio/clickLogo.wav"></audio>
                 </li>
 
-                <li  class="personagem jogador-2-selecionado" id="tk" data-name="T.K">
+                <li  class="personagem jogador-2-selecionado" id="T.k-angemon" data-name="Angemon">
                     <span class="tag">2P</span>
-                    <img src="./src/imagens/T.k1.jpg" alt="Personagem tk">
+                    <img src="./src/imagens/T.k-angemon.jpg" alt="Personagem tk">
                 </li>
 
-                <li class="personagem" id="sora" data-name="sora">
+                <li class="personagem" id="Sora-Birdramon" data-name="Birdramon">
                     <span class="tag">1P</span>
-                    <img src="./src/imagens/Sora1.jfif" alt="Sora">
+                    <img src="./src/imagens/Sora-Birdramon.jpg" alt="Sora">
                 </li>
 
-                <li class="personagem" id="izzy" data-name="Izzy">
+                <li class="personagem" id="izzy-kabuterimon" data-name="kabuterimon">
                     <span class="tag">1P</span>
-                    <img src="./src/imagens/izzy1.gif" alt="Personagem Izzy">
+                    <img src="./src/imagens/izzy-kabuterimon.gif" alt="Personagem Izzy">
                 </li>
 
-                <li class="personagem" id="joe" data-name="joe">
+                <li class="personagem" id="joe-Ikkakumon" data-name="Ikkakumon">
                     <span class="tag">1P</span>
-                    <img src="./src/imagens/Joe1.jpg" alt="Personagem joe">
+                    <img src="./src/imagens/joe-Ikkakumon.jpg" alt="Personagem joe">
                 </li>
                
             </ul>
       
             <div class="personagem-grande personagem-jogador-2">
-                <img src="./src/imagens/Tkbrasao.png" alt="Personagem selecionado jogador 2" id="personagem-jogador-2" style="width: 280px;position: static; margin-left: 100px; margin-top: 90px;">
-                <img src="./src/imagens/T.k-angemon2.png" alt="Personagem selecionado jogador 2" id="personagem-jogador-2">
+                <img src="./src/imagens/T.k-angemon-.png" alt="Personagem selecionado jogador 2" id="personagem-jogador-2" style="width: 280px;position: static; margin-left: 100px; margin-top: 90px;">
+                <img src="./src/imagens/T.k-angemon.png" alt="Personagem selecionado jogador 2" id="personagem-jogador-2">
                 <div class="nome">
                     <h2 class="brilho2">Angemon</h2>
                 </div>
@@ -93,4 +117,5 @@
     </main>
     <h4> Selecione seu personagem!</h4>
 </body>
+<script src="./src/js/index.js"></script>
 </html>

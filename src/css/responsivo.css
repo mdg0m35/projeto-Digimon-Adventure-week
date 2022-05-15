@@ -26,9 +26,33 @@
         padding: 0 5px;
         justify-content: start;
     }
+    .warapper{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+    }
+    .digitacao{
+        width: 14ch;
+        animation: typing 5s steps(60), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+       
+    
+    }
+      
+    @keyframes typing{
+        from{width: 0;}
+    }
+    
+    @keyframes blink{
+        from{border-color: transparent;}
+    }
 
     .cabecalho .titulo{
         font-size: 22px;
+      
     }
 
     .selecao-de-personagens .personagem-grande{
@@ -36,7 +60,7 @@
     }
 }
 
-@media(max-width: 360px){
+@media(min-width: 767px){
     .cabecalho .titulo{
         font-size: 19px;
     }
