@@ -20,7 +20,7 @@ personagens.forEach((personagem) => {
 
     const idSelecionado = personagem.attributes.id.value;
 
-    if(idSelecionado === 'ultron' ) return;
+    if(idSelecionado === 'ultron' || idSelecionado == 'logo') return;
 
     if(idSelecionado === 'logo'){
       const audio = document.getElementById('audioLogo').play()
